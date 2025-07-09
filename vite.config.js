@@ -4,13 +4,13 @@ export default defineConfig({
   root: './',
   server: {
     port: 3000,
-    open: '/legendary-football-landing.html'
+    open: '/index.html'
   },
   build: {
     outDir: 'dist',
     rollupOptions: {
       input: {
-        main: './legendary-football-landing.html'
+        main: './index.html'
       }
     }
   }
