@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEGENDS — Where Geometry Meets Genius</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader">
+        <div class="loader-content">
+            <div class="loader-number">
+                <span>100</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Blob Cursor -->
+    <div class="blob-cursor"></div>
+
+    <!-- Particle Canvas -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Custom Cursor -->
+    <div class="cursor">
+        <div class="cursor-ball"></div>
+    </div>
+    <div class="cursor-trail"></div>
+
+    <!-- Sound Wave Visualizer -->
+    <div class="sound-wave">
+        <div class="wave-bar"></div>
+        <div class="wave-bar"></div>
+        <div class="wave-bar"></div>
+        <div class="wave-bar"></div>
+        <div class="wave-bar"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <a href="#" class="logo">LEGENDS</a>
+        </div>
+    </nav>
+
+    <!-- Fullscreen Menu -->
+    <div class="fullscreen-menu" id="fullscreenMenu">
+        <ul class="menu-links">
+            <li><a href="#legends" data-text="01 Legends">01 Legends</a></li>
+            <li><a href="#mathematics" data-text="02 Mathematics">02 Mathematics</a></li>
+            <li><a href="#experience" data-text="03 Experience">03 Experience</a></li>
+            <li><a href="#contact" data-text="04 Contact">04 Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="floating-element float-1"></div>
+        <div class="floating-element float-2"></div>
+        <div class="floating-element float-3"></div>
+        
+        <!-- Morphing Shapes -->
+        <div class="morph-shape" style="top: 20%; left: 10%;"></div>
+        <div class="morph-shape" style="bottom: 30%; right: 15%; animation-delay: -5s;"></div>
+        
+        <!-- Wave Container -->
+        <div class="wave-container">
+            <div class="wave"></div>
+        </div>
+        
+        <div class="hero-background">
+            <div class="hero-image-background">
+                <img src="./images/hero-image.png" alt="Football Hero Banner" class="hero-background-image">
+                <div class="hero-image-overlay"></div>
+            </div>
+            <canvas id="heroCanvas" class="hero-canvas"></canvas>
+        </div>
+        
+        <div class="hero-layout">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <div class="title-word liquid-text">
+                        <span style="--i: 0">F</span><span style="--i: 1">o</span><span style="--i: 2">o</span><span style="--i: 3">t</span><span style="--i: 4">b</span><span style="--i: 5">a</span><span style="--i: 6">l</span><span style="--i: 7">l</span>
+                    </div>
+                    <div class="title-word liquid-text">
+                        <span style="--i: 8">l</span><span style="--i: 9">e</span><span style="--i: 10">g</span><span style="--i: 11">e</span><span style="--i: 12">n</span><span style="--i: 13">d</span><span style="--i: 14">s</span>
+                    </div>
+                    <div class="title-word liquid-text">
+                        <span style="--i: 15">+</span><span style="--i: 16"> </span><span style="--i: 17">5</span><span style="--i: 18">0</span><span style="--i: 19">0</span><span style="--i: 20"> </span><span style="--i: 21">F</span><span style="--i: 22">S</span>
+                    </div>
+                </h1>
+                
+                <!-- Hero CTA Button -->
+                <div class="hero-cta-container">
+                    <button class="hero-cta-btn">
+                        JOIN NOW
+                    </button>
+                </div>
+                
+                <!-- Infinite Marquee -->
+                <div class="marquee">
+                    <div class="marquee-content">
+                        <span>LEGENDS</span>
+                        <span>•</span>
+                        <span>FOOTBALL</span>
+                        <span>•</span>
+                        <span>MATHEMATICS</span>
+                        <span>•</span>
+                    </div>
+                    <div class="marquee-content" aria-hidden="true">
+                        <span>LEGENDS</span>
+                        <span>•</span>
+                        <span>FOOTBALL</span>
+                        <span>•</span>
+                        <span>MATHEMATICS</span>
+                        <span>•</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collage Section -->
+    <section class="collage-section" id="legends">
+        <div class="section-header">
+            <div class="section-number glitch" data-text="01">01</div>
+            <h2 class="section-title reveal">Goals Make Legends,<br>Legends Make History</h2>
+            <!-- Alternative creative options:
+                 - "When Ball Meets Net,<br>History Is Written"
+                 - "Mathematics of Magic,<br>Geometry of Greatness"
+                 - "Calculated Brilliance,<br>Immortal Moments"
+                 - "From Physics to Poetry,<br>Goals Define Eternity"
+                 - "Precision Meets Passion,<br>Legends Are Born"
+                 - "Every Strike Tells<br>A Timeless Story"
+            -->
+        </div>
+        
+        <div class="collage-grid">
+            <div class="collage-item reveal-scale ripple">
+                <img src="./images/grid/panenka.webp" alt="Antonín Panenka" class="collage-image">
+                <div class="collage-content">
+                    <div class="collage-number">9</div>
+                    <h3 class="collage-title">Antonín Panenka</h3>
+                    <p class="collage-subtitle">The Chip Master • Czechoslovakia</p>
+                </div>
+            </div>
+            
+            <div class="collage-item reveal-scale">
+                <img src="./images/grid/pelle.webp" alt="Pelé" class="collage-image">
+                <div class="collage-content">
+                    <div class="collage-number">10</div>
+                    <h3 class="collage-title">Pelé</h3>
+                    <p class="collage-subtitle">O Rei • Brazil</p>
+                </div>
+            </div>
+            
+            <div class="collage-item reveal-scale">
+                <img src="./images/grid/zidan.webp" alt="Zinedine Zidane" class="collage-image">
+                <div class="collage-content">
+                    <div class="collage-number">5</div>
+                    <h3 class="collage-title">Zinedine Zidane</h3>
+                    <p class="collage-subtitle">Zizou • France</p>
+                </div>
+            </div>
+            
+            <div class="collage-item reveal-scale">
+                <img src="./images/grid/messi.webp" alt="Lionel Messi" class="collage-image">
+                <div class="collage-content">
+                    <div class="collage-number">10</div>
+                    <h3 class="collage-title">Lionel Messi</h3>
+                    <p class="collage-subtitle">La Pulga • Argentina</p>
+                </div>
+            </div>
+            
+            <div class="collage-item reveal-scale">
+                <img src="./images/grid/ronaldo.webp" alt="Cristiano Ronaldo" class="collage-image">
+                <div class="collage-content">
+                    <div class="collage-number">7</div>
+                    <h3 class="collage-title">Cristiano Ronaldo</h3>
+                    <p class="collage-subtitle">CR7 • Portugal</p>
+                </div>
+            </div>
+            
+            <div class="collage-item reveal-scale">
+                <img src="./images/grid/maradona.webp" alt="Diego Maradona" class="collage-image">
+                <div class="collage-content">
+                    <div class="collage-number">10</div>
+                    <h3 class="collage-title">Diego Maradona</h3>
+                    <p class="collage-subtitle">The Golden Boy • Argentina</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trajectory Section -->
+    <section class="trajectory-section" id="mathematics">
+        <div class="trajectory-container">
+            <div class="trajectory-content reveal">
+                <div class="section-number glitch" data-text="02">02</div>
+                <h2 class="section-title">The Perfect<br>Equation</h2>
+
+            </div>
+            
+            <div class="trajectory-visual reveal-scale">
+                <canvas id="trajectoryCanvas"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Play Section -->
+    <section class="play-section" id="experience">
+        <div class="play-container">
+            <div class="section-number glitch" data-text="03">03</div>
+            <h2 class="section-title reveal">Experience<br>The Legend</h2>
+            <p class="body-large reveal" style="margin: 2rem auto; max-width: 600px; color: rgba(255,255,255,0.7);">
+                Step into the boots of legends. Calculate your trajectory. 
+                Master the physics. Create your moment.
+            </p>
+            
+            <div class="play-button reveal-scale magnetic-btn">
+                <div class="play-circle"></div>
+                <div class="play-icon"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="footer-logo">LEGENDS</div>
+                <p class="footer-description">
+                    Where geometry meets genius. An immersive exploration of football's 
+                    greatest moments through the lens of mathematics and physics.
+                </p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="#legends">The Legends</a></li>
+                    <li><a href="#mathematics">Mathematics</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">YouTube</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p class="copyright">© 2025 LEGENDS. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Credits</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
